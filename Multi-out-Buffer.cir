@@ -1,0 +1,32 @@
+.title KiCad schematic
+R1 Net-_C1-Pad2_ GND 10m
+R2 +9V Net-_C1-Pad1_ 2.2M
+R3 Net-_C1-Pad1_ GND 2.2M
+R4 Net-_C2-Pad1_ GND 10k
+R5 Net-_C2-Pad2_ GND 100k
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 1uF
+Q1 +9V Net-_C2-Pad1_ Net-_C1-Pad1_ MFPJ102
+R6 Net-_C3-Pad1_ GND 10k
+R7 Net-_C3-Pad2_ GND 100k
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 1uF
+Q2 +9V Net-_C3-Pad1_ Net-_Q2-Pad3_ MFPJ102
+R9 Net-_C5-Pad1_ GND 10k
+R11 Net-_C5-Pad2_ GND 100k
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 1uF
+Q3 +9V Net-_C5-Pad1_ Net-_Q2-Pad3_ MFPJ102
+R8 Net-_C4-Pad1_ GND 10k
+R10 Net-_C4-Pad2_ GND 100k
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 1uF
+Q4 +9V Net-_C4-Pad1_ Net-_Q2-Pad3_ MFPJ102
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 0.1
+J5 Net-_C5-Pad2_ NC_01 GND JACK_OUT3
+J4 Net-_C4-Pad2_ NC_02 GND JACK_OUT4
+J3 Net-_C2-Pad2_ NC_03 GND JACK_OUT1
+J2 Net-_C3-Pad2_ NC_04 GND JACK_OUT2
+J1 Net-_C1-Pad2_ Net-_J1-Pad2_ GND JACK_IN
+R12 Net-_J1-Pad2_ GND 100k
+SW1 GND Net-_Q2-Pad3_ Net-_C1-Pad1_ SW_DPDT_A
+SW2 GND Net-_D1-Pad1_ NC_05 SW_DPDT_B
+R13 +9V Net-_D1-Pad2_ 680
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+.end
